@@ -1,0 +1,164 @@
+@media (max-width: 48em) {
+  .sidebar .nav-main::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+
+  .main-container .main-components {
+    /* background-color: red; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    width: 65%;
+  }
+  .main-container .main-components::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-search-box {
+    position: fixed;
+    width: 62%;
+    z-index: 999;
+  }
+
+  .main-card .map-img-box {
+    height: 40rem;
+  }
+
+  .btn-direction {
+    width: 10%;
+  }
+  .search-box {
+    width: 70%;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+
+  .map-eye {
+    width: 20%;
+  }
+
+  .main-card {
+    margin-top: 6.2rem;
+  }
+
+  .main-space {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .slider-box .reset-btn {
+    display: none;
+  }
+
+  .slider-box .slider-input {
+    display: none;
+  }
+
+  .main-space {
+    position: relative;
+  }
+
+  .random-box {
+    position: absolute;
+    bottom: 3rem;
+  }
+
+  .container {
+    display: block;
+    position: relative;
+  }
+
+  .navigation-small {
+    display: flex;
+    background-color: #0c36bd;
+    height: 5rem;
+  }
+
+  .nav-bar {
+    background-color: #20004d;
+    flex: 0 0 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-bar-input {
+    display: none;
+  }
+
+  .nav-bar-label {
+    cursor: pointer;
+  }
+
+  .map-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    gap: 1rem;
+  }
+
+  .map-bar-text {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .navigation {
+    display: none;
+    width: 0;
+    transition: all 0.3s;
+  }
+
+  .container:has(.nav-bar-input:checked) .navigation {
+    display: block;
+    width: 6rem;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+  }
+
+  .nav-bar-input:checked + .nav-bar-label {
+    display: none;
+  }
+
+  .main-container {
+    position: relative;
+  }
+
+  .main-container .dev-name {
+    position: absolute;
+    bottom: 6rem;
+    right: 0;
+    z-index: 999999999;
+  }
+
+  .container:has(.nav-bar-input:checked) .main-container .dev-name {
+    position: absolute;
+    left: 7rem;
+  }
+}
+
+@media (max-width: 32em) {
+  .main-container .main-components {
+    width: 100%;
+  }
+
+  .main-search-box {
+    width: 95.5%;
+    gap: 2rem;
+  }
+
+  .random-box {
+    display: none;
+  }
+
+  .map-eye {
+    justify-content: space-between;
+  }
+
+  .main-card .map-img-box {
+    height: 32rem;
+  }
+}

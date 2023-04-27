@@ -1,0 +1,692 @@
+/* NAVIGATION*/
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.nav-header {
+  /* background-color: green; */
+  flex: 0.4 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 1.5rem; */
+}
+
+.logo {
+  height: 3rem;
+}
+
+.nav-main {
+  flex: 4 0 12rem;
+  /* background-color: red; */
+  padding: 3.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: auto;
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+.nav-main::-webkit-scrollbar {
+  background-color: transparent;
+  width: 1.2rem;
+}
+.nav-main::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 11px;
+}
+
+.nav-footer {
+  /* background-color: green; */
+  flex: 0 0 20rem;
+  display: flex;
+  padding: 2rem 0 1rem 0;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-self: flex-end;
+  gap: 2rem;
+}
+
+.nav-footer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nav-footer-sub {
+  display: flex;
+  margin-top: auto;
+}
+
+.margin-top {
+  /* display: flex; */
+  margin-top: auto;
+}
+
+.toggle {
+  display: flex;
+  margin-top: auto;
+}
+
+.toggle,
+.nav-links:link,
+.nav-links:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.3rem;
+  border-radius: 11px;
+  background-color: transparent;
+}
+
+.nav-links:hover,
+.nav-links:active {
+  background-color: #343a40;
+}
+
+.toggle:hover {
+  background-color: #343a40;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  background-image: url(../img/bg-satelite.jpg);
+  background-color: rgba(190, 165, 35, 0.548);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-components {
+  /* background-color: red; */
+  width: 40rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  height: 100vh;
+  overflow-y: scroll;
+  z-index: 3;
+}
+
+.main-components::-webkit-scrollbar {
+  display: none;
+}
+
+.main-search-box {
+  max-width: 100%;
+  background-color: #20004d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 11px;
+  box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-input {
+  height: 3rem;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #adb5bd;
+}
+
+.search-input::placeholder {
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  height: 100%;
+}
+
+.search-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.map {
+  fill: none;
+}
+.map-eye {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.direction-btn,
+.map-btn,
+.eye-btn {
+  cursor: pointer;
+}
+
+/* card  */
+
+.main-card {
+  border-radius: 11px;
+  background-color: #20004d;
+  box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.map-img-box {
+  height: 25rem;
+  background-image: url(../img/satelite-card-edt.jpg);
+  background-color: rgba(158, 140, 48, 0.548);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  margin-top: 2rem;
+  overflow: hidden;
+  border-radius: 11px;
+  position: relative;
+  box-shadow: inset 0 0 2rem 2rem #0000008f;
+}
+
+.nft {
+  fill: #000;
+  height: 2.4rem;
+}
+
+.map-img-icon a:link,
+.map-img-icon a:active {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(112, 0, 255, 0.9);
+  border-radius: 11px;
+  position: absolute;
+}
+
+.map-img-icon .nextearth-btn:link,
+.map-img-icon .nextearth-btn:visited {
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
+.icon.next {
+  height: 2rem;
+}
+
+.map-img-icon .nft-btn:link,
+.map-img-icon .nft-btn:active {
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #339af0;
+}
+
+.flex-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 1.5rem;
+  left: 1rem;
+  /* width: 10rem; */
+  height: 3.6rem;
+}
+
+.flex.flex-icon a:link,
+.flex.flex-icon a:visited {
+  position: absolute;
+}
+
+.nextearth-btn {
+  left: 4rem;
+}
+
+.cancel-btn {
+  right: 1rem;
+  top: 1.5rem;
+}
+
+.location-btn {
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+.share-btn {
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.save-btn {
+  bottom: 1.5rem;
+  right: 1rem;
+}
+
+.next {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.map-text-box {
+  padding: 2rem;
+}
+
+.heading-primary {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.value-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-bottom: 1.1rem;
+}
+
+.value-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.value-price span {
+  color: aqua;
+}
+
+.icon-illustration-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.icon-illustration {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #868e96;
+}
+
+.icon-illustration .icon {
+  height: 1.8rem;
+  fill: #868e96;
+}
+.icon-illustration p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* card hidden box */
+
+.icon.info {
+  fill: none;
+  opacity: 0.5;
+}
+
+.land-compatible {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.land-compatible-1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.land-compatible-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.land-compatible-location {
+  font-size: 1.5rem;
+}
+
+.land-compatible-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.land-compatible-price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.land-price-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.land-price-info-text {
+  font-size: 1.5rem;
+  color: #868e96;
+  font-weight: 500;
+}
+
+.land-price-info-number {
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.land-price-info-number span {
+  font-size: 1.2rem;
+  color: aqua;
+}
+
+.land-show-details,
+.land-hide-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.land-hide-details-text,
+.land-show-details-text {
+  font-size: 1.5rem;
+  color: #868e96;
+  font-weight: 500;
+}
+
+/* checkbox */
+
+.card-description:has(#show-details:checked) .card-hidden-box {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+#show-details:checked + .land-show-details {
+  display: none;
+}
+
+#show-details:checked ~ .land-hide-details {
+  display: flex;
+}
+
+.land-hide-details {
+  display: none;
+}
+/* hidden boxes -functionality to be done with js */
+
+.card-hidden-box {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+.hide-details-icon {
+  transform: rotate(180deg);
+}
+
+/* sell btn */
+
+.btn-sell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.3rem 0;
+  background-image: linear-gradient(to right, #ff5665, #ad00ff);
+  border-radius: 11px;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.btn-sell:hover {
+  background-image: linear-gradient(
+    to right,
+    hsla(355, 100%, 67%, 0.7),
+    hsla(281, 100%, 50%, 0.7)
+  );
+}
+
+.sell-text {
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-sell:hover .sell-text {
+  color: #ffffffbd;
+}
+
+.btn-sell:hover .hammer {
+  fill: #ffffffbd;
+}
+
+/* gift card */
+
+.main-giftcard {
+  background-color: #20004d;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 11px;
+  box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.main-giftcard-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon.gift-card {
+  height: 1.5rem;
+}
+
+.heading-secondary {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main-giftcard-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.main-giftcard-info {
+  background-color: #06000f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  row-gap: 1rem;
+  padding: 1rem 1.5rem 0 1.5rem;
+  border-radius: 11px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.icon.giftcard-info {
+  opacity: 1;
+}
+
+.main-giftcard-info-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 10rem;
+}
+
+.use-giftcard-btn {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #6600cc;
+  border-radius: 11px;
+  padding: 1.4rem 0;
+}
+
+.use-giftcard-btn:hover {
+  background-color: rgba(102, 0, 204, 0.7);
+  color: #ffffffbd;
+}
+
+.main-giftcard-info-hiddenbox {
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+.label {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .main-giftcard-info-hiddenbox {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+input[type="checkbox"]:checked ~ .label .hide-info-icon {
+  transform: rotate(180deg);
+}
+
+.hide-info-icon {
+  transform: rotate(360deg);
+}
+
+/* slider */
+
+.main-container {
+  position: relative;
+}
+
+.main-space {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 3rem;
+  display: flex;
+  gap: 2rem;
+  height: 30.5rem;
+}
+
+.random-box {
+  align-self: flex-end;
+}
+
+.random-btn {
+  background-color: #20004d;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 11px;
+}
+
+.reset-btn {
+  background-color: #20004d;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 11px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  width: 4rem;
+}
+
+.slider-input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 26rem;
+  background-color: #20004d;
+  padding: 1rem 0;
+  border-radius: 15px;
+}
+
+input[type="range"] {
+  /* -webkit-appearance: none; */
+  display: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+}
+
+.custom-slider {
+  width: 0.4rem;
+  height: 15rem;
+  cursor: pointer;
+}
+
+.custom-slider-track {
+  height: 100%;
+  width: 100%;
+  background-color: #306;
+  position: relative;
+}
+
+.custom-slider-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #e6cffc;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 7.5px);
+  left: calc(50% - 7.5px);
+}
+
+.dev-name {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.dev-name-link:link,
+.dev-name-link:visited {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
